@@ -24,11 +24,12 @@
                 price: 1000,
             },
         ];
-        for (const key in products) {
-            products[key].price = products[key].price*0.85;
-            }
-            
-            console.log(products);
+
+        products.forEach(element => {
+            element.price = element.price * 0.85
+        });
+
+        console.log(products);
 
     </script>
 </body>
